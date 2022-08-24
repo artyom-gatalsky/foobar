@@ -3,6 +3,16 @@ entries:
   foobar:
   - apiVersion: v2
     appVersion: 1.23.1
+    created: "2022-08-24T09:36:02.683947074Z"
+    description: A Helm chart for Kubernetes
+    digest: 667652a67b763df315384afc749fdbae7377528e1a47a4c4cbe90af2fb3e3922
+    name: foobar
+    type: application
+    urls:
+    - https://github.com/artyom-gatalsky/foobar/releases/download/foobar-0.1.2/foobar-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.23.1
     created: "2022-08-24T09:25:57.011701853Z"
     description: A Helm chart for Kubernetes
     digest: 170981632af333a57c486c0c37154221cd666b96a2c2bfc56e9cfb772cd02142
