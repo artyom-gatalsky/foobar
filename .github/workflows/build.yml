@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main
-
+    # Publish `v1.2.3` tags as releases.
+    tags:
+      - v*
 env:
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
