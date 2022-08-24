@@ -1,0 +1,20 @@
+name: Build Application
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Dockerfile'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Build docker image
+      run: docker build . --file Dockerfile --tag foobar:$(date +%s)
