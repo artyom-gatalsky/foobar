@@ -9,10 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Build the Docker image
+    - name: Checkout
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
+
+    - name: Build docker image
       run: docker build . --file Dockerfile --tag foobar:$(date +%s)
 
   release:
