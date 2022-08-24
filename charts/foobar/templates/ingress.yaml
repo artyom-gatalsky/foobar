@@ -33,6 +33,7 @@ spec:
         paths:
           {{- range .paths }}
           - path: {{ . }}
+            pathType: {{ .pathType }}
             backend:
               service:
                 name: {{ $fullName }}
