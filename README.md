@@ -5,15 +5,15 @@ Helm's [documentation](https://helm.sh/docs) to get started.
 
 Once Helm has been set up correctly, add the repo as follows:
 
-  helm repo add <alias> https://artyom-gatalsky.github.io/helm-charts
+  helm repo add foobar https://artyom-gatalsky.github.io/foobar
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
 the latest versions of the packages.  You can then run `helm search repo
-artyom-gatalsky` to see the charts.
+foobar` to see the charts.
 
 To install the foobar chart:
 
-    helm install foobar artyom-gatalsky/foobar
+    helm install foobar foobar/foobar
 
 To uninstall the chart:
 
