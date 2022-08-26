@@ -4,5 +4,5 @@ description: Dummy application for testing purposes
 sources:
   - https://github.com/artyom-gatalsky/foobar
 type: application
-version: 2.0.1
+version: 2.0.2
 appVersion: 0.0.1
